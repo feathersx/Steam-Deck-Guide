@@ -395,7 +395,7 @@ Emulation Station Front End
 
 [回到顶部](#目录)
 
-**[Steam Deck Windows 资源](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)**
+**[Steam Deck Windows 资源](https://help.steampowered.com/zh-cn/faqs/view/6121-ECCD-D643-BAA8)**
 
 **[官方恢复指南](https://help.steampowered.com/zh-cn/faqs/view/1B71-EDF2-EB6D-2BB3) 恢复到默认的Steam Deck操作系统。**
 
