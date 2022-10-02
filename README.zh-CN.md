@@ -19,58 +19,58 @@
 
 # 目录
 
-1. [开始使用 Steam Deck](#getting-started-with-the-steam-deck)
+1. [开始使用 Steam Deck](#开始使用-steam-deck)
 
-     - [Steam Deck 配件](#Steam-Deck-Accessories)
-     - [Steam Deck 开发](#steam-deck-development)
+     - [Steam Deck 配件](#steam-deck-配件)
+     - [Steam Deck 开发](#steam-deck-开发)
      - [Steam数据库](#steamdb)
-     - [获取软件](#getting-software)
-     - [用于Steam Deck的其他Linux操作系统](#Other-Linux-Operating-Systems-for-the-Steam-Deck)
-     - [在Steam Deck上安装Windows 10或11操作系统](#Getting-Windows-10-or-11-on-the-Steam-Deck)
-     - [提高电池寿命](#improving-battery-life)
-     - [复制/传输文件到Steam Deck的工具](#tools-to-copytransfer-files-to-your-steam-deck)
-     - [在您的Steam Deck上运行Android应用程序](#running-android-apps-on-your-steam-deck)
-     - [在您的Steam Deck上运行Bottles](#running-bottles-on-your-steam-deck)
-     - [Steam Tinker Launch配置工具](#steam-tinker-launch)
-     - [RetroDECK复古游戏机模拟器](#RetroDECK)
-     - [在Steam Deck上添加Btrfs](#btrfs-on-steam-deck)
-     - [用于Steam Deck的插件加载器](#plugin-loaders)
-        * [Decky Loader](#plugin-loaders#decky-loader)
-          * [Steam Deck Power Tools 硬件设置工具](#steam-deck-power-tools)
-        * [Crankshaft](#plugin-loaders#crankshaft)
-     - [在您的Steam Deck上安装虚幻引擎5](#installing-unreal-engine-on-linux)
+     - [获取软件](#获取软件)
+     - [用于Steam Deck的其他Linux操作系统](#用于steam-deck的其他linux操作系统)
+     - [在Steam Deck上安装Windows 10或11操作系统](#在-steam-deck-上安装-windows-10-或-11操作系统)
+     - [提高电池寿命](#提高电池寿命)
+     - [复制/传输文件到Steam Deck的工具](#复制传输文件到-steam-deck-的工具)
+     - [在你的Steam Deck上运行Android应用程序](#在你的-steam-deck-上运行android应用程序)
+     - [在你的Steam Deck上运行Bottles](#在你的-steam-deck-上运行bottles)
+     - [Steam Tinker Launch配置工具](#steam-tinker-launch配置工具)
+     - [RetroDECK复古游戏模拟器](#RetroDECK复古游戏模拟器)
+     - [在Steam Deck上添加Btrfs TF卡ext4工具](#btrfs-on-steam-deck)
+     - [用于Steam Deck的系统插件](#plugin-loaders系统插件)
+        * [Decky Loader 插件加载器](#decky-loader插件加载器)
+          * [Steam Deck 强力硬件设置工具](#steam-deck-power-tools强力硬件设置工具)
+        * [Crankshaft 插件管理器](#crankshaft插件管理器)
+     - [在你的Steam Deck上安装虚幻引擎5](#在linux上安装虚幻引擎unreal-engine)
 
-2. [游戏](#gaming)
+2. [游戏](#gaming游戏)
 
-     - [Steam](#steam)
-     - [ProtonDB游戏兼容数据库](#protondb)
-     - [Lutris](#lutris)
-        * [Epic 游戏商店整合](#Epic-Games-Store-integration)
-        * [暴雪战网整合](#blizzard-battlenet-intgeration)
-        * [EA Play 整合](#EA-Play-integration)
-        * [Origin 整合](#Origin-integration)
-        * [Ubisoft Connect 育碧整合](#Ubisoft-Connect-integration)
-        * [GOG Galaxy 整合](#GOG-Galaxy-integration)
-     - [GameHub](#gamehub)
-     - [Epic 游戏商店](#epic-games-store)
-     - [游戏串流](#game-streaming)
-     - [游戏模拟器](#game-emulators)
+     - [Steam 服务介绍](#steam-服务介绍)
+     - [ProtonDB 游戏兼容性数据库](#protondb-游戏兼容性数据库)
+     - [Lutris 第三方游戏平台](#lutris-第三方游戏平台)
+        * [Epic 游戏商店整合](#epic-游戏商店整合)
+        * [暴雪战网整合](#暴雪战网整合)
+        * [EA Play 整合](#ea-play-整合)
+        * [Origin 整合](#origin-整合)
+        * [Ubisoft Connect 育碧整合](#ubisoft-connect-整合)
+        * [GOG Galaxy 整合](#gog-galaxy-整合)
+     - [GameHub 游戏库](#gamehub游戏库)
+     - [Epic 游戏商店](#epic-游戏商店)
+     - [Game Streaming 游戏串流](#game-streaming游戏串流)
+     - [游戏模拟器](#game-emulators游戏模拟器)
 
-3. [游戏开发](#game-development)
+3. [游戏开发](#游戏开发)
 
-4. [Vulkan 开发](#vulkan-development)
+4. [Vulkan 开发](#vulkan-开发)
 
-5. [DirectX 开发](#directx-development)
+5. [DirectX 开发](#directx-开发)
 
-6. [OpenGL 开发](#opengl-development)
+6. [OpenGL 开发](#opengl-开发)
 
-7. [Wayland 开发](#wayland-development)
+7. [Wayland 开发](#wayland-开发)
 
-8. [Audio 音频开发](#audio-development)
+8. [Audio 音频开发](#audio-音频开发)
 
 
 # 开始使用 Steam Deck
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Steam Deck](https://www.steamdeck.com/) 是由 [Valve 公司](https://valvesoftware.com/) 与 [Advanced Micro Devices (AMD)](https://www.amd.com/)合作开发的一款掌上游戏电脑。它允许用户游玩他们的整个Steam游戏库，但可以由用户修改，以运行其他游戏店面或应用程序。Steam Deck于2022年2月开始发货。
 
@@ -134,7 +134,7 @@ CPU：Zen 2 4核/8线程、频率2.4-3.5GHz（最高可达 448 GFlops FP32）
 APU 功率：4-15W
 
 ## Steam Deck 配件
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [PROJECT Killswitch](https://dbrand.com/killswitch) 是为Steam Deck定制的保护套，由 [dbrand](https://dbrand.com/) 设计。
 
@@ -203,7 +203,7 @@ PS 5  DualSense™ Controller
 
 
 ## Steam Deck 开发
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 **开发资源的快速链接**
 
@@ -264,9 +264,9 @@ Deck 已认证 程序 分类 资源: [Steam Deck](https://www.steamdeck.com/en/v
 Steam库游戏的兼容性徽章。资源: [Steam Deck](https://www.steamdeck.com/en/verified)
 
 ## SteamDB
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
-[SteamDB](https://steamdb.info/instantsearch/) 是一个关于Steam上所有东西的数据库。重要提示 SteamDB是一个非官方项目，与Valve或Steam没有任何关系。
+[SteamDB](https://steamdb.info/instantsearch/) 是一个关于Steam上所有游戏的数据库。重要提示 SteamDB是一个非官方项目，与Valve或Steam没有任何关系。
    
    - [Steam Deck 已通过验证游戏列表](https://steamdb.info/instantsearch/?refinementList%5Boslist%5D%5B0%5D=Steam%20Deck%20Verified)
    
@@ -276,7 +276,7 @@ Steam库游戏的兼容性徽章。资源: [Steam Deck](https://www.steamdeck.co
 
 
 ## 获取软件
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Discover](https://apps.kde.org/discover/)  是一个软件中心，让你从多个来源管理软件，包括你的操作系统的软件库、Flatpak软件库、Snap商店，甚至是store.kde.org的AppImages。另外，Discover允许你寻找、安装和管理Plasma的附加组件和所有你喜欢的KDE应用程序。
 
@@ -300,7 +300,7 @@ Steam库游戏的兼容性徽章。资源: [Steam Deck](https://www.steamdeck.co
 
 
 ## 用于Steam Deck的其他Linux操作系统。
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [HoloISO](https://github.com/theVakhovskeIsTaken/holoiso) 是一个SteamOS 3 (Holo) archiso配置。它的目的是将Steam Deck的Holo操作系统带入一个通用的、可安装的格式，并提供一个接近官方的SteamOS体验。
 
@@ -391,9 +391,9 @@ Pop!_OS Desktop
 Emulation Station Front End
 </h3>
 
-## 在 Steam Deck 上获取安装 Windows 10 或 11操作系统
+## 在 Steam Deck 上安装 Windows 10 或 11操作系统
 
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 **[Steam Deck Windows 资源](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)**
 
@@ -414,7 +414,7 @@ Emulation Station Front End
 </h3>
 
 ## 提高电池寿命
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Steam Deck - 如何在游戏中获得最佳的电池寿命! | The Phawx YouTube](https://www.youtube.com/watch?v=zB6tkjuXX8A-Y)
 
@@ -431,8 +431,8 @@ Emulation Station Front End
         
  [Power Control App | Project-SBC YouTube](https://www.youtube.com/watch?v=PcSV1tto2OM-Y)
  
-## 复制/传输文件到你的 Steam Deck 的工具
- [回到顶部](#table-of-contents)
+## 复制/传输文件到 Steam Deck 的工具
+ [回到顶部](#目录)
  
 [KDE Connect](https://kdeconnect.kde.org/)  是一个工具，可以让你轻松地将你的手机和你的电脑连接起来，将你的电脑和你的平板电脑连接起来；或者将你的电脑和你的Steam Deck设备连接起来。它可以用来跨设备共享文件，直接从你的笔记本电脑上读取和发送短信，并远程锁定你的电脑。
 
@@ -452,8 +452,8 @@ Emulation Station Front End
 
 [Usermode FTP Server](https://gitlab.com/ergoithz/umftpd) 是一个工具，让你作为用户启动一个FTP服务器，用任何FTP客户端传输文件。允许你用许多文件浏览器的内置FTP支持直接访问你的文件。Windows文件浏览器、Thunar、Gnome Files、Dolphin等等。 [Usermode FTP Server on FlatHub](https://flathub.org/apps/details/eu.ithz.umftpd)
 
-## 在你的 Steam Deck 甲板上运行Android应用程序
-[回到顶部](#table-of-contents)
+## 在你的 Steam Deck 上运行Android应用程序
+[回到顶部](#目录)
 
 [Waydroid](https://github.com/waydroid/waydroid) 是一种基于容器的方法，可以在普通的Linux系统上启动一个完整的Android系统。请务必查看 [Waydroid Arch wiki page](https://wiki.archlinux.org/title/Waydroid). 
 
@@ -466,8 +466,8 @@ Emulation Station Front End
 [Anbox](https://github.com/anbox) 是一个基于容器的软件，用于在Linux发行版上运行一个完整的Android系统。请务必查看 [Anbox Arch wiki page](https://wiki.archlinux.org/title/Anbox).
 
 
-## 在你的 Steam Deck 甲板上运行Bottles
-[回到顶部](#table-of-contents)
+## 在你的 Steam Deck 上运行Bottles
+[回到顶部](#目录)
 
 [Bottles](https://usebottles.com/) 是一个软件工具，让你在Linux上运行Windows软件。它内置的依赖性安装系统赋予了软件自动兼容的权限。下载管理器可以下载官方组件，如：运行器（Wine、Proton）、DXVK、依赖项等。可在 [FlatHub](https://flathub.org/apps/details/com.usebottles.bottles) 或通过 [KDE Discover](https://apps.kde.org/discover/) 商店获得。
 
@@ -475,9 +475,9 @@ Emulation Station Front End
  <img src="https://user-images.githubusercontent.com/45159366/182049940-ccba08e7-b05d-4991-b36f-1e2596c390da.png">
  </p>
  
- ## Steam Tinker Launch
+ ## Steam Tinker Launch配置工具
  
- [回到顶部](#table-of-contents)
+ [回到顶部](#目录)
  
  [Steam Tinker Launch](https://github.com/frostworx/steamtinkerlaunch) 是一个用于Steam客户端的Linux封装工具，它可以在运行中快速定制和启动游戏的工具和选项。
  
@@ -485,9 +485,9 @@ Emulation Station Front End
  <img src="https://user-images.githubusercontent.com/45159366/176962906-5d388e16-955e-4936-a676-c591d0937acd.png">
  </p>
  
- ## RetroDECK
+ ## RetroDECK（复古游戏模拟器）
  
- [回到顶部](#table-of-contents)
+ [回到顶部](#目录)
  
 [RetroDECK](https://retrodeck.net/) 是一个工具，它带来了一个直接从SteamOS编目和播放你的复古游戏的环境，它是专门为Steam Deck定制的。它由EmulationStation桌面版驱动，使用RetroArch和其他独立的模拟器，让你在一个整洁的环境中导入和播放你最喜欢的复古（甚至非复古）游戏，而不会充斥你的Steam库。
  
@@ -496,18 +496,18 @@ Emulation Station Front End
  </p>
  
  ## Btrfs on Steam Deck
- [回到顶部](#table-of-contents)
+ [回到顶部](#目录)
  
- [SteamOS Btrfs](https://gitlab.com/popsulfr/steamos-btrfs/) 是一个项目，它将帮助你从在Steam Deck的microSD卡或主目录上使用ext4，说明 [Btrfs](https://btrfs.wiki.kernel.org/). 
+ [SteamOS Btrfs](https://gitlab.com/popsulfr/steamos-btrfs/) 是一个项目，它将帮助你从在Steam Deck的microSD卡或主目录上使用ext4，说明： [Btrfs](https://btrfs.wiki.kernel.org/). 
  
  <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/172273657-f184233d-56d8-429b-9a63-d8a2b8e7412b.png">
  </p>
  
- ## Plugin Loaders
- [回到顶部](#table-of-contents)
+ ## Plugin Loaders（系统插件）
+ [回到顶部](#目录)
 
- ### Decky Loader
+ ### Decky Loader（插件加载器）
 
 [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) 是一个用于Steam Deck的插件加载工具。
 
@@ -525,8 +525,8 @@ Emulation Station Front End
  <img src="https://user-images.githubusercontent.com/45159366/176962910-9bf09ad0-1ab2-4524-bd50-7420afec2c4a.png">
  </p>
 
- #### Steam Deck Power Tools（超级工具）
-[回到顶部](#table-of-contents)
+ #### Steam Deck Power Tools（强力硬件设置工具）
+[回到顶部](#目录)
 
 [Steam Deck PowerTools](https://github.com/NGnius/PowerTools) 是Decky开发的一个插件，为用户提供高级系统调整。
 
@@ -541,7 +541,7 @@ Emulation Station Front End
  <img src="https://user-images.githubusercontent.com/45159366/168942613-685cf180-3b1d-4a29-ba10-f5bdfbcfdfb6.png">
  </p>
 
- ### Crankshaft
+ ### Crankshaft（插件管理器）
 [Crankshaft](https://crankshaft.space/) 是一个Steam客户端插件管理器和框架。它可以让你安装和创建插件，为你的Steam客户端添加更多功能。 [Available as a Flatpak](https://flathub.org/apps/details/space.crankshaft.Crankshaft)
 
  <p align="center">
@@ -550,7 +550,7 @@ Emulation Station Front End
 
 ## 在Linux上安装虚幻引擎（Unreal Engine）
 
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 在您的Linux系统上安装虚幻引擎5的最简单的方法是使用Epic资产管理器，它可以在 [FlatHub](https://flathub.org/) 上以 [Flatpak](https://flatpak.org)的形式提供。如果您的Linux系统上没有安装Flatpak，请按照这里 [简单的说明来开始安装](https://flatpak.org/setup/).
 
@@ -585,7 +585,7 @@ Emulation Station Front End
  - [Unreal Engine Python API Reference](https://docs.unrealengine.com/5.0/en-US/PythonAPI/index.html)
  
 # Gaming（游戏）
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 ## Steam 服务介绍
 
@@ -607,8 +607,8 @@ Emulation Station Front End
 
 [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) 是一个工具，用于安装和管理Steam的 [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) 和 [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) 的 [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom) 并使用这个图形用户界面。基于AUNaseef的 [ProtonUp](https://github.com/AUNaseef/protonup)，用Python 3和Qt 6制作。
 
-## ProtonDB 游戏兼容数据库
-[回到顶部](#table-of-contents)
+## ProtonDB 游戏兼容性数据库
+[回到顶部](#目录)
 
 [ProtonDB](https://www.protondb.com) 收集了超过100,000份来自其他玩家的游戏报告，他们在Linux上用Proton测试游戏，并提供游戏表现的总分。一个不断增长的建议库提供了一些调整，在质子继续发展的同时，你可以尝试让游戏工作。除此之外，你还可以在这个网站上探索Steam游戏目录，浏览和发现各种以前无法在Linux上使用的游戏。
 
@@ -622,167 +622,56 @@ Emulation Station Front End
 <img src="https://user-images.githubusercontent.com/45159366/108773214-dd718e80-7512-11eb-983b-ce192e5b30f2.png">
 </p>
 
-## Lutris
-[回到顶部](#table-of-contents)
+## Lutris 第三方游戏平台
+[回到顶部](#目录)
 
 [Lutris](https://lutris.net) 是一个Linux的游戏客户端。它让你可以访问你所有的视频游戏，但目前的控制台一代除外。同时，与其他商店如GOG、Steam、Battle.net、Origin、Ubisoft Connect和许多其他来源很好地整合，允许你导入你现有的游戏库和社区维护的安装脚本给你一个完全自动化的设置。
 
-### Epic游戏商店整合
+### Epic 游戏商店整合
 
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [添加 Epic Games Store](https://lutris.net/games/epic-games-store/)
 
  <img src="https://user-images.githubusercontent.com/45159366/106686406-14412e00-657f-11eb-97c4-c80c6e25a374.png">
  
  ### 暴雪战网整合
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Blizzard Battle.net](https://lutris.net/games/battlenet/) 暴雪战网是一个基于互联网的在线游戏、数字发行和数字版权管理平台，由动视和暴雪娱乐开发。Battle.net是《魔兽世界》、《暗黑破坏神III》、《星际争霸II》、《炉石传说》、《风暴英雄》、《守望先锋》和《使命召唤》的启动程序。
 
 <img src="https://user-images.githubusercontent.com/45159366/189614458-d51a15cb-d02d-4b1f-9e77-e712dcdb1d73.png">
 
 ### EA Play 整合
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [EA Play](https://lutris.net/games/ea-desktop/) 是电子艺术公司为Xbox One、Xbox Series X/S、PlayStation 4、PlayStation 5和微软视窗平台提供的基于订阅的视频游戏服务，提供由电子艺术公司出版的精选游戏以及额外的奖励。
 
 <img src="https://user-images.githubusercontent.com/45159366/189614466-476e0c4e-bab9-44bd-86c4-8aeadd739b63.png">
 
 ### Origin 整合
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
  
 [Origin](https://lutris.net/games/origin/) 是一个由电子艺界开发的在线游戏、数字发行和数字版权管理（DRM）平台，允许用户在互联网上购买PC和移动平台的游戏，并通过Origin客户端（以前的EA下载管理器、EA下载器和EA链接）下载游戏。
 
 <img src="https://user-images.githubusercontent.com/45159366/189614468-49c4a05c-d6ca-4988-b3e6-10f0c71463d6.png">
 
 ### Ubisoft Connect 整合
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Ubisoft Connect](https://lutris.net/games/ubisoft-connect/) 是育碧创建的数字发行、数字版权管理、多人游戏和通信服务，提供类似于其他各游戏公司提供的成就/奖杯的体验。
 
 <img src="https://user-images.githubusercontent.com/45159366/189614471-422cbad8-1ae7-4f06-ad81-7f3b68550569.png">
 
 ### GOG Galaxy 整合
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [GOG GALAXY](https://lutris.net/games/gog-galaxy/) 是一个完全可选的客户端来安装、播放和更新您的游戏。
 
 <img src="https://user-images.githubusercontent.com/45159366/189615528-385c01a8-f780-49e0-9502-db00d8082d9d.png"> 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## GameHub
-[回到顶部](#table-of-contents)
+## GameHub（游戏库）
+[回到顶部](#目录)
 
 [GameHub](https://github.com/tkashkin/GameHub) 是一个统一的库，用于存放您的所有游戏。它允许你将不同平台的游戏存储到一个程序中，使你更容易管理你的游戏。
 
@@ -807,8 +696,8 @@ Emulation Station Front End
    - [itch.io](https://itch.io/)
 
 
-## Epic Games Store
-[回到顶部](#table-of-contents)
+## Epic 游戏商店
+[回到顶部](#目录)
 
 [Heroic](https://heroicgameslauncher.com/) 是一个适用于Linux、Windows和macOS的开源游戏启动器（适用于使用Crossover的本地和Windows游戏）。它支持使用Legendary从Epic Games Store启动游戏，这是Epic Games Launcher的CLI替代品。 [Flatpak for Heroic Games Launcher](https://flathub.org/apps/details/com.heroicgameslauncher.hgl)
 
@@ -819,7 +708,7 @@ Emulation Station Front End
 </p>
 
 ## Game Streaming（游戏串流）
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [Geforce NOW](https://www.nvidia.com/en-us/geforce-now/download/) 是 NVIDIA 的云游戏服务
 
@@ -856,7 +745,7 @@ Emulation Station Front End
 </p>
 
 ## Game Emulators（游戏模拟器）
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 [EmuDeck](https://www.emudeck.com/) 是一个工具，它可以满足你的复古游戏需求，从RetroArch配置、边框、GameCube、Wii、Citra、SNES等的游戏手柄配置等一切。EmuDeck甚至会安装EmulationStation桌面版，并继承他们所有的自定义配置，不需要配置ROM路径或任何东西。
 
@@ -939,8 +828,8 @@ Emulation Station Front End
    - [r/EmuDev](https://www.reddit.com/r/EmuDev/)
    - [r/Roms](https://www.reddit.com/r/Roms/)
 
-# Game Development（游戏开发）
-[回到顶部](#table-of-contents)
+# 游戏开发
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/97361059-45151700-185c-11eb-9d12-dae51c79eb8a.png">
@@ -1081,7 +970,7 @@ Emulation Station Front End
 [GameBlocks](https://www.gameblocks.com/) 是一款服务器端反作弊和中间件软件。
 
 # Vulkan 开发
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/129622224-8c4cca51-9200-4d70-9d16-2610d704713a.png">
@@ -1155,7 +1044,7 @@ Emulation Station Front End
 [Vulkan.jl](https://github.com/JuliaGPU/Vulkan.jl) 是一个围绕Vulkan图形和计算库的轻量级包装器。它在底层的C接口上暴露了一些抽象，主要面向那些寻找一种更自然的方式以最小的开销来处理Vulkan的开发者。
 
 # DirectX 开发
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/142779599-6a46ab05-c64a-48fe-a775-3e4f46e41f63.png">
@@ -1221,7 +1110,7 @@ Emulation Station Front End
 [RenderDoc](https://renderdoc.org) 是一个独立的图形调试器，它允许快速和简单的单帧捕获和详细反省任何使用Vulkan、D3D11、OpenGL和OpenGL ES或D3D12的应用程序，跨越Windows、Linux、Android、Stadia或Nintendo Switch™。
 
 # OpenGL 开发
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/131386211-f507b5d4-a3c9-4c21-aadd-2aa5bde94d1e.png">
@@ -1303,7 +1192,7 @@ Emulation Station Front End
 [Mesa 3D Graphics Library](https://docs.mesa3d.org/index.html) 是一个开始作为OpenGL规范的开源实现的项目。一个用于渲染交互式3D图形的系统。Mesa与其他几个开源项目联系在一起： [Direct Rendering Infrastructure](https://dri.freedesktop.org/), [X.org](https://x.org/), 和 [Wayland](https://wayland.freedesktop.org/)，在Linux、FreeBSD和其他操作系统上提供OpenGL支持
 
 # Wayland 开发
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/104235197-79cf4e00-5409-11eb-97a6-a12f7bd8ad2a.png">
@@ -1388,8 +1277,8 @@ Emulation Station Front End
 
 [Wine-wayland](https://github.com/varmd/wine-wayland) 是一个允许你使用纯Wayland和Wine/DXVK运行DX9/DX11和Vulkan游戏的应用程序。
 
-# Audio Development（音频开发）
-[回到顶部](#table-of-contents)
+# Audio 音频开发
+[回到顶部](#目录)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/142936394-b546784e-231a-4391-9dd8-c686e5a7eee9.png">
@@ -1453,7 +1342,7 @@ WirePlumber，PipeWire会话管理器如何工作。来源: [Collabora](https://
 - [x] 如果你想为本指南做出贡献，只需提交申请 [Pull Request](https://github.com/mikeroyal/Steam-Deck-Guide/pulls).
 
 ## 许可
-[回到顶部](#table-of-contents)
+[回到顶部](#目录)
 
 根据 [知识共享署名4.0国际（CC BY 4.0）公共许可协议发布。](https://creativecommons.org/licenses/by/4.0/).
 
