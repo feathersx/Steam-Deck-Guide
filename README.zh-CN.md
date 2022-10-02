@@ -23,7 +23,7 @@
 
      - [Steam Deck 配件](#steam-deck-配件)
      - [Steam Deck 开发](#steam-deck-开发)
-     - [Steam数据库](#steamdb)
+     - [SteamDB 游戏兼容性数据库](#steamdb-游戏兼容性数据库)
      - [获取软件](#获取软件)
      - [用于Steam Deck的其他Linux操作系统](#用于steam-deck的其他linux操作系统)
      - [在Steam Deck上安装Windows 10或11操作系统](#在-steam-deck-上安装-windows-10-或-11操作系统)
@@ -43,7 +43,7 @@
 2. [游戏](#gaming游戏)
 
      - [Steam 服务介绍](#steam-服务介绍)
-     - [ProtonDB 游戏兼容性数据库](#protondb-游戏兼容性数据库)
+     - [ProtonDB 游戏可玩性评分](#protondb-游戏兼容性数据库)
      - [Lutris 第三方游戏平台](#lutris-第三方游戏平台)
         * [Epic 游戏商店整合](#epic-游戏商店整合)
         * [暴雪战网整合](#暴雪战网整合)
@@ -72,7 +72,7 @@
 # 开始使用 Steam Deck
 [回到顶部](#目录)
 
-[Steam Deck](https://www.steamdeck.com/) 是由 [Valve 公司](https://valvesoftware.com/) 与 [Advanced Micro Devices (AMD)](https://www.amd.com/)合作开发的一款掌上游戏电脑。它允许用户游玩他们的整个Steam游戏库，但可以由用户修改，以运行其他游戏店面或应用程序。Steam Deck于2022年2月开始发货。
+[Steam Deck](https://www.steamdeck.com/) 是由 [Valve 公司](https://valvesoftware.com/) 与 [Advanced Micro Devices (AMD)](https://www.amd.com/)合作开发的一款掌上游戏电脑 [购买地址](https://store.steampowered.com/steamdeck)。它允许用户游玩他们的整个Steam游戏库，但可以由用户修改，以运行其他游戏店面或应用程序。Steam Deck于2022年2月开始发货。
 
 * [Steam Deck 小册子](https://store.steampowered.com/news/app/1675200/view/3401926123919972634)
 
@@ -80,7 +80,7 @@
  
 * [Steam Deck 技巧和窍门第二部分 | GamingOnLinux](https://www.gamingonlinux.com/2022/08/steam-deck-tips-and-tricks-part-2/)
 
-* [Steam Deck 拆解 作者：Jeff Suovanen | iFixit](https://www.ifixit.com/News/57101/steam-deck-teardown)
+* [Steam Deck 官方 iFixit 合作拆解维修指南 ](https://zh.ifixit.com/Device/Steam_Deck)
 
 * [解锁Steam Deck教程 | Chris Titus Tech](https://christitus.com/unlock-steam-deck/)
 
@@ -96,7 +96,7 @@
 <br />
 </p>
 
-Steam Deck 设备信息，来自: [Steam Deck](https://www.steamdeck.com)
+Steam Deck [设备信息](https://www.steamdeck.com/zh-cn/tech)，来自: [Steam Deck](https://www.steamdeck.com)
 
 [Steam OS 3.0](https://store.steampowered.com/steamdeck) 是一个 [immutable](https://en.wikipedia.org/wiki/Immutable_object) 使用 [KDE Plasma](https://kde.org/plasma-desktop) 的桌面操作系统(OS)。这允许你使用[Flatpak](https://flatpak.org/)在容器中安装应用程序，而不是安装在根文件系统上。这不仅意味着应用程序的安装与系统核心文件系统是隔离的，而且还意味着恶意应用程序入侵/破坏你的系统的能力大大降低。
 
@@ -263,7 +263,7 @@ Deck 已认证 程序 分类 资源: [Steam Deck](https://www.steamdeck.com/en/v
 
 Steam库游戏的兼容性徽章。资源: [Steam Deck](https://www.steamdeck.com/en/verified)
 
-## SteamDB
+## SteamDB 游戏兼容性数据库
 [回到顶部](#目录)
 
 [SteamDB](https://steamdb.info/instantsearch/) 是一个关于Steam上所有游戏的数据库。重要提示 SteamDB是一个非官方项目，与Valve或Steam没有任何关系。
@@ -397,7 +397,7 @@ Emulation Station Front End
 
 **[Steam Deck Windows 资源](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)**
 
-**[恢复指南](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3) 恢复到默认的Steam Deck操作系统。**
+**[官方恢复指南](https://help.steampowered.com/zh-cn/faqs/view/1B71-EDF2-EB6D-2BB3) 恢复到默认的Steam Deck操作系统。**
 
 **[Windows 11](https://www.microsoft.com/en-us/software-download/windows11)**
 
@@ -607,12 +607,12 @@ Emulation Station Front End
 
 [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) 是一个工具，用于安装和管理Steam的 [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) 和 [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) 的 [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom) 并使用这个图形用户界面。基于AUNaseef的 [ProtonUp](https://github.com/AUNaseef/protonup)，用Python 3和Qt 6制作。
 
-## ProtonDB 游戏兼容性数据库
+## ProtonDB 游戏可玩性评分
 [回到顶部](#目录)
 
 [ProtonDB](https://www.protondb.com) 收集了超过100,000份来自其他玩家的游戏报告，他们在Linux上用Proton测试游戏，并提供游戏表现的总分。一个不断增长的建议库提供了一些调整，在质子继续发展的同时，你可以尝试让游戏工作。除此之外，你还可以在这个网站上探索Steam游戏目录，浏览和发现各种以前无法在Linux上使用的游戏。
 
- - [ProtonDB 游戏兼容性检查列表](https://www.protondb.com/explore?selectedFilters=antiCheat)
+ - [ProtonDB 游戏可玩性评分列表](https://www.protondb.com/explore?selectedFilters=antiCheat)
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/45159366/108773213-dcd8f800-7512-11eb-8775-19b0c8924d55.png">
