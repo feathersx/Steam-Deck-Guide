@@ -9,6 +9,7 @@
 <br />
 </p>
 
+[**English**](README.md) | [**中文**](README.zh-CN.md) 
 
 #### A guide covering Steam Deck including the applications and tools that will make you a better and more efficient with your Steam Deck device.
 

@@ -9,6 +9,7 @@
 <br />
 </p>
 
+[**English**](README.md) | [**中文**](README.zh-CN.md) 
 
 #### 指南不仅涵盖Steam Deck的使用说明，也包括应用和工具，这将使你更好地和更有效地使用你的Steam Deck设备。
 
